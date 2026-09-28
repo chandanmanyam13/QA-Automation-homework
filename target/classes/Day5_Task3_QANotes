@@ -1,0 +1,13 @@
+# Basic QA Notes
+
+## QA (Quality Assurance)
+
+QA is the process of ensuring that a software product meets defined quality standards and works as expected.
+
+## Test Case
+
+A test case is a set of steps, conditions, test data, and expected results used to verify a specific feature or functionality.
+
+## Bug
+
+A bug is a defect or error in software that causes the application to behave incorrectly or unexpectedly.
