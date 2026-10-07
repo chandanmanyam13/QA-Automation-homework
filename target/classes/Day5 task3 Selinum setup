@@ -1,0 +1,41 @@
+## Day 5 - Task 3: Week 4 Selenium Overview
+
+Week 4 focuses on Selenium WebDriver and browser automation.
+
+Topics covered:
+
+- Selenium WebDriver setup
+- Locating web elements using:
+  - id
+  - name
+  - className
+  - XPath
+  - CSS Selector
+- Element interactions such as:
+  - click()
+  - sendKeys()
+  - getText()
+  - clear()
+- Handling dropdowns
+- Working with checkboxes and radio buttons
+- Using waits to handle dynamic web pages
+- Browser navigation:
+  - back
+  - forward
+  - refresh
+- Managing multiple browser windows and tabs
+- Creating a reusable Selenium base class
+
+### SeleniumBase.java
+
+`SeleniumBase.java` will centralize the common Selenium setup and teardown operations.
+
+It will be responsible for:
+
+1. Starting the WebDriver
+2. Opening the browser
+3. Configuring browser settings
+4. Closing the browser
+5. Quitting the WebDriver after tests
+
+This helps keep the test classes clean and avoids repeating the same Selenium setup and teardown code.
