@@ -1,3 +1,9 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.Keys;
 class  Day3_Task1_MouseActions {
 public static void main(String[] args) {
     WebDriver driver = new ChromeDriver();
@@ -47,6 +53,7 @@ class Day3_Task3_KeyboardActions {
         WebElement firstField = driver.findElement(By.id("firstName"));
         firstField.click();
         firstField.sendKeys("John");
+
 
         actions.sendKeys(Keys.TAB).perform(); // move to next field
         actions.sendKeys("Doe").perform();

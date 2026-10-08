@@ -51,9 +51,8 @@ public class WebTables {
 
         String value =
                 driver.findElement(
-                                By.xpath(
-                                        "//table[@id='table1']//tr[2]/td[3]"
-                                )
+                        By.xpath("//table[@id='table1']//tbody/tr[td[1]='Smith']/td[3]")
+
                         )
                         .getText();
 

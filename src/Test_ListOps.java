@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class TEST_ListOps {
+public class Test_ListOps {
 
     public static void main(String[] args) {
         ArrayList<String> browsers = new ArrayList<>();
