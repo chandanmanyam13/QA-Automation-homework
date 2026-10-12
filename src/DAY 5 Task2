@@ -1,0 +1,60 @@
+# Day 5 Mini Project: Login Page Automation
+
+## Objective
+Automate login to the Herokuapp demo application using Java and
+Selenium WebDriver, validate successful login, and capture screenshots.
+
+## Tools Used
+- Java
+- Selenium WebDriver
+- Google Chrome
+- ChromeDriver
+
+## Test Website
+https://the-internet.herokuapp.com/login
+
+## Test Credentials
+- Username: tomsmith
+- Password: SuperSecretPassword!
+
+## Test Steps
+1. Launch Chrome and maximize the browser window.
+2. Open the login page.
+3. Wait for the username field to become visible.
+4. Enter the username and password.
+5. Capture a screenshot of the completed login form.
+6. Click the Login button.
+7. Wait for navigation to the secure area.
+8. Verify that the message contains:
+   "You logged into a secure area!"
+9. Capture a screenshot of the login result.
+10. Close the browser.
+
+## Expected Result
+The user reaches the secure area and sees the success message.
+The console displays "PASS: Login successful".
+
+## Screenshot Handling
+Screenshots are saved in the screenshots folder:
+- login_form_filled.png
+- login_result.png
+- login_failure.png — captured if the test fails
+
+## Synchronization
+Explicit waits allow up to 10 seconds for required elements
+or navigation, reducing failures caused by page-loading delays.
+
+## Failure Handling
+Unexpected login results cause an AssertionError.
+Test failures trigger a screenshot attempt before the error is rethrown.
+The browser closes through the finally block.
+
+## Assumptions
+- Java, Chrome, and Selenium are configured.
+- The test website is reachable.
+- Demo credentials and element locators remain unchanged.
+- The project has permission to create screenshot files.
+
+## Scope
+This project validates successful login only.
+Registration, invalid login, and logout are outside its scope.
